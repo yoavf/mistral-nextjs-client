@@ -6,7 +6,9 @@ A simple client for the [mistral.ai](https://mistral.ai) chat API, using [Next.j
 
 `mistral-nextjs-client` is a simple interface for interacting with the mistral.ai chat API.
 
-**Note**: This project is not affiliated with mistral.ai.
+**Note**: This project is in no way affiliated with mistral.ai.
+
+<img width="500" alt="Screenshot 2023-12-20 at 17 30 28" src="https://github.com/yoavf/mistral-nextjs-client/assets/844866/4168ab9e-c173-4d92-bb18-46eb53997283">
 
 ### TODOs
 

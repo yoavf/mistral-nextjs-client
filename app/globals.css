@@ -16,6 +16,18 @@
   }
 }
 
+@layer components {
+  pre {
+    @apply bg-gray-100 p-2 rounded overflow-x-auto whitespace-pre-wrap;
+  }
+  .message-content p {
+    @apply text-base;
+  }
+  .message-content h2 {
+    @apply text-2xl font-bold;
+  }
+}
+
 body {
   color: rgb(var(--foreground-rgb));
   background: linear-gradient(

@@ -8,6 +8,12 @@ A simple client for the [mistral.ai](https://mistral.ai) chat API, using [Next.j
 
 **Note**: This project is not affiliated with mistral.ai.
 
+### TODOs
+
+- [ ] Session reset
+- [ ] Persistance and local history storage
+- [ ] Dark mode
+
 ## Getting started
 
 Before running the project, make sure you have `pnpm` [installed](https://pnpm.io/installation).

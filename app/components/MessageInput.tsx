@@ -6,7 +6,7 @@ interface Props {
   onChange: (e: React.ChangeEvent<HTMLInputElement>) => void;
   onSubmit: (
     e: React.FormEvent<HTMLFormElement>,
-    options?: ChatRequestOptions
+    options?: ChatRequestOptions,
   ) => void;
   isLoading: boolean;
 }

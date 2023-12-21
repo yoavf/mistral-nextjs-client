@@ -1,4 +1,4 @@
-import { useCallback, useState, useEffect } from 'react';
+import { useCallback, useState, useEffect } from "react";
 
 const useScrollToBottom = (ref: React.RefObject<HTMLElement>) => {
   const [showArrow, setShowArrow] = useState(false);
@@ -6,15 +6,14 @@ const useScrollToBottom = (ref: React.RefObject<HTMLElement>) => {
   const scrollToBottom = useCallback(() => {
     ref.current?.scrollTo({
       top: ref.current.scrollHeight,
-      behavior: 'smooth',
+      behavior: "smooth",
     });
   }, [ref]);
 
   useEffect(() => {
     const div = ref.current;
 
-    if ( !div)
-      return;
+    if (!div) return;
 
     const handleScroll = () => {
       const scrolledToBottom =
@@ -23,10 +22,10 @@ const useScrollToBottom = (ref: React.RefObject<HTMLElement>) => {
       setShowArrow(!scrolledToBottom);
     };
 
-    div.addEventListener('scroll', handleScroll);
+    div.addEventListener("scroll", handleScroll);
 
     return () => {
-      div.removeEventListener('scroll', handleScroll);
+      div.removeEventListener("scroll", handleScroll);
     };
   }, [ref]);
 
